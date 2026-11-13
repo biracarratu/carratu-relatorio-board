@@ -1,0 +1,12 @@
+{
+ "_comment": "Faixas [ruim, bom] da Metodologia Carratu para SaaS B2B em crescimento. Referências de mercado amplamente usadas (LTV:CAC 3x, payback de 12 meses, NRR acima de 100%, magic number acima de 0,75); ajuste ao estágio e ao modelo do cliente e registre no relatório. Ranges [bad, good].",
+ "version": "1.0.0",
+ "weights": {"ltv_cac": 25, "payback": 25, "nrr": 20, "magic": 15, "growth": 15},
+ "metrics": {
+  "ltv_cac": [1.0, 4.0],
+  "payback_months": [30, 9],
+  "nrr": [0.90, 1.15],
+  "magic_number": [0.3, 1.0],
+  "mrr_growth_monthly": [0.0, 0.05]
+ }
+}

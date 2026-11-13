@@ -1,0 +1,59 @@
+{
+ "lang": "pt",
+ "title": "Marketing e vendas: relatório para o board",
+ "subtitle": "Eficiência de crescimento nos últimos 12 meses e recomendação de orçamento",
+ "eyebrow": "CARRATU GROWTH KIT · RELATÓRIO PARA O BOARD",
+ "client_name": "Acme Software (empresa fictícia)",
+ "date": "2026-11-12",
+ "file_prefix": "exemplo-relatorio-board",
+ "score": {"value": 49, "label": "Eficiência de crescimento", "confidence": 100,
+  "verdict": "A empresa cresce 2,9% ao mês, mas paga caro por isso: o CAC leva 20 meses para voltar e a base encolhe 4% ao ano sem venda nova."},
+ "kpis": [
+  {"label": "CAC blended", "value": "R$ 19,8 mil", "note": "ARPA novo R$ 1,2 mil/mês"},
+  {"label": "Payback do CAC", "value": "20,5 meses", "status": "warn"},
+  {"label": "LTV:CAC", "value": "3,1x", "status": "pass"},
+  {"label": "NRR anualizado", "value": "96%", "status": "warn"},
+  {"label": "Magic number", "value": "0,66", "status": "warn"},
+  {"label": "Crescimento do MRR", "value": "2,9%/mês"},
+  {"label": "Churn de logos", "value": "1,6%/mês"},
+  {"label": "Pipeline de marketing", "value": "66%", "note": "do pipeline gerado"}
+ ],
+ "executive_summary": "Nos últimos 12 meses, marketing e vendas investiram R$ 3,4 milhões e trouxeram 172 clientes e R$ 214 mil de MRR novo. O LTV:CAC de **3,1x** está no limite saudável, mas o **payback de 20,5 meses** é longo para o estágio da empresa, e o **NRR de 96%** mostra que a base perde receita: sem venda nova, o MRR encolheria cerca de 4% ao ano.\n\nO sinal mais importante é de **saturação**: no último trimestre o investimento subiu 8% e o MRR novo ficou praticamente estável (+1%), com o mesmo número de clientes (44). O CAC subiu 8%, para R$ 21,2 mil. O próximo real investido está rendendo menos que o anterior.\n\nHá onde realocar: **Orgânico (SEO)** responde por 12% do investimento de marketing e 29% do MRR novo, com CAC de marketing de R$ 4,0 mil, contra R$ 13,7 mil em Google Ads.",
+ "top_priorities": [
+  "Realocar verba de mídia paga para conteúdo e SEO: mover cerca de R$ 10 mil por mês de Google Ads (um quarto do canal) por dois trimestres e medir o CAC de marketing.",
+  "Atacar o NRR antes de acelerar aquisição: programa de expansão e de prevenção de churn para levar o NRR de 96% para acima de 100%.",
+  "Congelar aumento de orçamento de aquisição até o CAC marginal voltar a cair: hoje +8% de investimento trouxe +1% de MRR novo."
+ ],
+ "biggest_strength": "Marketing é o motor do pipeline: 66% do pipeline gerado é originado por marketing, e cada real investido gera R$ 8,70 em pipeline.",
+ "context": {"business": "SaaS B2B (exemplo fictício)", "goal": "Reunião de conselho do 4º trimestre: decidir o orçamento de 2027", "period": "jun/2025 a nov/2026 (janela de 12 meses)"},
+ "data_sources": ["Planilha mensal de marketing, vendas e MRR (dados sintéticos)", "Investimento e resultados por canal (dados sintéticos)"],
+ "sections": [
+  {"title": "Recomendação de orçamento", "page_break_before": true, "blocks": [
+   {"type": "table", "header": ["Decisão", "Valor", "Por quê", "Como medir em 90 dias"], "widths": [3.2, 2.8, 6, 5], "rows": [
+    ["Manter o orçamento total de aquisição", "R$ 0 de aumento", "Último trimestre: +8% de investimento, +1% de MRR novo", "CAC blended de volta abaixo de R$ 20 mil"],
+    ["Realocar de Google Ads para conteúdo e SEO", "~R$ 10 mil/mês", "CAC de marketing de R$ 13,7 mil vs R$ 4,0 mil", "CAC de marketing por canal e MRR novo orgânico"],
+    ["Investir em expansão e retenção", "Do orçamento de CS", "NRR de 96%: a base encolhe sem venda nova", "NRR acima de 100%"],
+    ["Testar antes de cortar Outbound e LinkedIn Ads", "Sem mudança", "CAC intermediário; ciclo pode ser mais longo", "Oportunidades por conta-alvo (ABM)"]
+   ]},
+   {"type": "callout", "heading": "A tese para o conselho", "text": "A empresa não precisa de mais verba agora: precisa de mais retorno por real. Realocar para os canais de menor CAC e estancar a perda de receita da base pode trazer o payback para perto de 12 meses sem aumentar o orçamento total."}
+  ]}
+ ],
+ "recommendations": [
+  {"priority": "Crítica", "issue": "Programa de NRR: expansão e prevenção de churn", "how": "Revisão trimestral das 50 maiores contas, alerta de uso baixo e oferta de expansão por perfil.", "effort": "Médio", "impact": "Alto", "owner": "CS"},
+  {"priority": "Alta", "issue": "Realocar ~R$ 10 mil/mês de Google Ads para conteúdo e SEO", "how": "Dois trimestres, com meta de CAC de marketing e MRR novo orgânico.", "effort": "Baixo", "impact": "Alto", "owner": "Marketing"},
+  {"priority": "Alta", "issue": "Investigar a queda de eficiência do último trimestre", "how": "Rodar o diagnóstico de funil por canal para ver onde a conversão caiu.", "effort": "Baixo", "impact": "Médio", "owner": "RevOps"},
+  {"priority": "Ganho rápido", "issue": "Reportar CAC marginal todo mês", "how": "Últimos 3 meses contra os 3 anteriores, ao lado do CAC médio.", "effort": "Baixo", "impact": "Médio", "owner": "RevOps"}
+ ],
+ "action_plan": {
+  "30": ["Plano de realocação aprovado", "Programa de NRR desenhado com CS", "Diagnóstico de funil por canal"],
+  "60": ["Realocação rodando", "Primeiras ações de expansão nas maiores contas"],
+  "90": ["Novo relatório para o board com CAC por canal, payback e NRR", "Decidir se o orçamento de aquisição volta a crescer"]
+ },
+ "limitations": [
+  "LTV calculado pelo churn de logos médio; com poucos meses ou mudança recente de preço, use como ordem de grandeza.",
+  "O CAC por canal usa só a verba de marketing do canal; o time comercial é compartilhado e entra só no CAC blended.",
+  "Dados sintéticos: este relatório é um exemplo do formato e da metodologia, não descreve uma empresa real."
+ ],
+ "methodology": "Janela de 12 meses. CAC blended = (marketing + vendas) ÷ clientes novos; payback = CAC ÷ (ARPA novo × margem bruta); LTV = ARPA × margem ÷ churn mensal de logos; NRR = produto mensal de (1 + (expansão − churn) ÷ MRR inicial) anualizado; magic number = MRR líquido novo do trimestre × 12 ÷ S&M do trimestre anterior. Nota pela rubrica Carratu: LTV:CAC 25, payback 25, NRR 20, magic number 15, crescimento 15.",
+ "onepager_summary": "Crescimento de 2,9% ao mês, com payback de 20,5 meses e NRR de 96%. O último trimestre mostra saturação: +8% de investimento para +1% de MRR novo. Recomendação: manter o orçamento total, realocar de Google Ads para SEO e atacar a retenção."
+}
